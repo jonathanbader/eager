@@ -1762,7 +1762,7 @@ if (params.run_bam_filtering) {
 // Post filtering mapping QC - particularly to help see how much was removed from mapping quality filtering
 
 process samtools_flagstat_after_filter {
-    label 'sc_tiny'
+    label 'sc_small'
     tag "$libraryid"
     publishDir "${params.outdir}/samtools/filtered_stats", mode: params.publish_dir_mode
 
